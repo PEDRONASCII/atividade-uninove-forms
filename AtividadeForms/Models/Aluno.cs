@@ -17,5 +17,6 @@ public class Aluno
     public string Curso { get; set; }
 
     [Required(ErrorMessage = "Data de Nascimento é obrigatória")]
+    [DataType(DataType.Date)]
     public DateTime? DataNascimento { get; set; }
 }
